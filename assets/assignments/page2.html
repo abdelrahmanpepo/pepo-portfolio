@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - Assignment Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        /* كلمة Start تظهر على اليمين فوق خالص زي الـ PDF */
+        .start-label {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: red;
+            font-weight: bold;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        .bold-text {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .end-section {
+            margin-top: 500px; /* مسافة كبيرة عشان التمرير ينزل للـ end بالظبط */
+            padding: 20px;
+            border-top: 2px dashed #ccc;
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- كلمة Start فوق على اليمين -->
+    <div class="start-label">start</div>
+
+    <!-- المحتوى -->
+    <h1>This my First website</h1>
+    <p class="bold-text">this text is bold with size 5 The standard Lorem Ipsum Passage</p>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit..."</p>
+
+    <!-- رابط البحث في قوقل (بيفتح في New Tab) -->
+    <div style="margin-top: 30px;">
+        <p>search using Google: <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google Search</a></p>
+    </div>
+
+    <!-- نقطة النهاية (end) اللي بينزل عندها الـ link -->
+    <div id="end" class="end-section">
+        end
+    </div>
+</div>
+
+</body>
+</html>

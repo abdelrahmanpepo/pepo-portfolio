@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 2 — Table Layout</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            position: relative;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .start-label {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: red;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+            text-align: center;
+            border: 2px solid #333;
+        }
+        th, td {
+            border: 2px solid #333;
+            padding: 14px 18px;
+        }
+        .green-row {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+        .cairo-text {
+            color: red;
+            text-align: center;
+        }
+        .content-text {
+            text-align: left;
+        }
+        .end-section {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="start-label">start</div>
+
+    <h2>Task 2 - Table Layout</h2>
+    <table>
+        <tr>
+            <td colspan="2">name</td>
+            <td rowspan="2" style="vertical-align: middle; font-weight: bold;">Address</td>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td>Last</td>
+        </tr>
+        <tr class="green-row">
+            <td colspan="3">All the data is here</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 40%; vertical-align: middle; font-size: 1.3em; font-weight: bold;">Hamada</td>
+            <td colspan="2" class="cairo-text">cairo</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="content-text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+            </td>
+        </tr>
+    </table>
+
+    <div style="margin-top: 40px; border-top: 1px solid #ddd; padding-top: 20px;">
+        <p>Write the HTML code to turn an image into a clickable link that opens a website of your choice when clicked.</p>
+        <p>Search using Google: <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google Search</a></p>
+        
+        <p>Click the Google logo to visit Google:</p>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" style="width: 150px;">
+        </a>
+    </div>
+
+    <div id="end" class="end-section">
+        end
+    </div>
+</div>
+
+</body>
+</html>
